@@ -8,9 +8,6 @@ export function CreatePublicClient(network: NETWORKS = "mainnet") {
   let chain: Chain = mainnet;
 
   let url = `https://eth-mainnet.g.alchemy.com/v2/${CONFIG.ALCHEMY_MAIN_API_KEY}`;
-  // new Date().getHours() % 2 === 0
-  //   ? `https://eth-mainnet.g.alchemy.com/v2/${CONFIG.ALCHEMY_MAIN_API_KEY}`
-  //   : `https://mainnet.infura.io/v3/${CONFIG.INFURA_API_KEY}`;
 
   if (network === "arbitrum") {
     chain = arbitrum;
